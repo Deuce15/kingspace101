@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Set an Appointment{% endblock %}
+{% block content %}
+    
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Appointment</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="">Home</a>
+                            <a href="">Set Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+            <center>
+            	<h1>Review Your Information</h1>
+				<strong>Your Name: </strong>{{your_name}}<br/>
+				<strong>Phone: </strong>{{your_phone}}<br/>
+				<strong>Your Email: </strong>{{your_email}}<br/>
+				<strong>Address: </strong>{{your_address}}<br/>
+				<strong>When: </strong>{{your_schedule}}<br/>
+				<strong>Appointment Day: </strong>{{your_date}}<br/>
+				<strong>Your Message: </strong>{{your_message}}<br/>
+            
+            <br/><br/>
+            <strong>Note: </strong> This appointment hasn't been set yet. We will contact you shortly to confirm your appointment.
+            </center>
+
+            <br/><br/>
+
+{% endblock %} 
