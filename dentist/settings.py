@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'dentist.wsgi.application'
+WSGI_APPLICATION = 'dentist.wsgi.application'
 
 
 # Database
@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR / 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -145,3 +145,6 @@ EMAIL_HOST_USER = 'i.nyamu5@gmail.com'
 EMAIL_HOST_PASSWORD = 'kristinewm'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+
+django_heroku.settings(locals())
