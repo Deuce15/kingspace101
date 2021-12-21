@@ -22,7 +22,7 @@ def contact(request):
 
 		From: {}
 		'''.format(data['message'], data['message_email'])
-		send_mail(data['message_subject'], message, '', ['i.nyamu5@gmail.com'])
+		send_mail(data['message_subject'], message, '', ['kingspacebuilders@gmail.com'])
 		
 		# send an email
 		'''
