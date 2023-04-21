@@ -14,7 +14,7 @@ psycopg2==2.9.2
 python-decouple==3.5
 pytz==2021.3
 six==1.16.0
-sqlparse==0.4.2
+sqlparse==0.4.4
 tomli==1.0.4
 virtualenv==20.9.0
 virtualenvwrapper-win==1.2.6
